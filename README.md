@@ -25,4 +25,4 @@ SO THAT I can manage my time effectively
     https://github.com/BlessingI/Work-Day-Scheduler.git
 
 ## Web Site link
-    https://blessingi.github.io/codeQuiz/
+    https://blessingi.github.io/Work-Day-Scheduler/
