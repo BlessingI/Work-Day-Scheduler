@@ -22,7 +22,7 @@ SO THAT I can manage my time effectively
 27 March 2022
 
 ## Repository link
-    https://github.com/BlessingI/codeQuiz.git
+    https://github.com/BlessingI/Work-Day-Scheduler.git
 
 ## Web Site link
     https://blessingi.github.io/codeQuiz/
