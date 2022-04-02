@@ -1,6 +1,8 @@
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
+
+//sorting out time
 var time = new Date();
 
 //pick out elements
@@ -39,7 +41,6 @@ let oneRowText = document.querySelector('#oneRowText')
 let twoRowText = document.querySelector('#twoRowText')
 let threeRowText = document.querySelector('#threeRowText')
 let fiveRowText = document.querySelector('#fiveRowText')
-
 
 
 //funtion to change background color
