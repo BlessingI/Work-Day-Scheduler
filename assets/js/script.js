@@ -3,6 +3,7 @@ $("#currentDay").html(todayDate);
 
 var time = new Date();
 
+//pick out elements
 let timeInHour = time.getHours()
 let textArea = document.querySelector('.description')
 
@@ -41,7 +42,7 @@ let fiveRowText = document.querySelector('#fiveRowText')
 
 
 
-
+//funtion to change background color
 const compareHardCodedTime = (time, textId) =>{
     if(time == timeInHour){
         textId.classList.add('present')
@@ -53,6 +54,7 @@ const compareHardCodedTime = (time, textId) =>{
 
 }
 
+//making use of the color
 compareHardCodedTime(eightSectionTime, firstRowText)
 compareHardCodedTime(nineSectionTime, secondRowText)
 compareHardCodedTime(fourSectionTime, fourRowText)
@@ -65,7 +67,7 @@ compareHardCodedTime(threeSectionTime, threeRowText)
 compareHardCodedTime(fiveSectionTime, fiveRowText)
 
 
-
+//save to local storage
 const contentWritten = () => {
     let typedText = firstRowText.value.trim()
     localStorage.setItem("textSaved", JSON.stringify(typedText)); 
@@ -117,7 +119,7 @@ const contentWritten10 = () => {
 }
 
 
-
+//saving to local storage
 firstRowText.textContent = JSON.parse(localStorage.getItem("textSaved"));
 secondRowText.textContent = JSON.parse(localStorage.getItem("textSaved2"));
 tenRowText.textContent = JSON.parse(localStorage.getItem("textSaved3"));
@@ -130,6 +132,7 @@ fourRowText.textContent = JSON.parse(localStorage.getItem("textSaved9"));
 fiveRowText.textContent = JSON.parse(localStorage.getItem("textSaved10"));
 
 
+//event listener
 firstButton.addEventListener('click', contentWritten)
 secondButton.addEventListener('click', contentWritten2)
 threeButton.addEventListener('click', contentWritten3)
